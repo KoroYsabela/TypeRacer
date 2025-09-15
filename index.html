@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRacer</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">TypeRacer</h1>
+            <button class="instructions-btn" type="button">Instructions</button>
+        </div>
+    </header>
+
+    <main class="main-grid">
+        <section class="main-left">
+            <div class="input-group mb-4" style="max-width: 300px;">
+                <label class="input-group-text" for="difficultySelect">Select Difficulty</label>
+                <select class="form-select" id="difficultySelect">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <!-- Typing area, text to type, input, etc. will go here -->
+            <div class="typing-area">
+                <div class="sample-text" id="sampleText">
+                    The quick brown fox jumps over the lazy dog.
+                </div>
+                <input type="text" class="typing-input" id="typingInput" placeholder="Start typing here..." autocomplete="off" />
+                <div class="typing-controls">
+                    <button type="button" class="btn btn-primary" id="startBtn">Start</button>
+                    <button type="button" class="btn btn-warning" id="stopBtn">Stop</button>
+                    <button type="button" class="btn btn-secondary" id="retryBtn">Retry</button>
+                </div>
+            </div>
+        </section>
+        <aside class="main-right">
+            <div class="results-area">
+                <h2>Results</h2>
+                <div class="result-item">
+                    <strong>Level:</strong> <span id="resultLevel">-</span>
+                </div>
+                <div class="result-item">
+                    <strong>Time:</strong> <span id="resultTime">-</span>
+                </div>
+                <div class="result-item">
+                    <strong>WPM:</strong> <span id="resultWpm">-</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+    
+
+
+    <!-- Bootstrap JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/57fbd21ebd.js" crossorigin="anonymous"></script>
+    <!-- Custom JS Script -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
